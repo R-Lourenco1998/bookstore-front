@@ -16,6 +16,7 @@ import { MatCardModule } from "@angular/material/card";
 import { CategoriaReadComponent } from "./components/views/categoria/categoria-read/categoria-read.component";
 import { MatTableModule } from "@angular/material/table";
 import { HttpClientModule } from "@angular/common/http";
+import { MatButtonModule } from "@angular/material/button";
 @NgModule({
   declarations: [
     AppComponent,
@@ -36,6 +37,7 @@ import { HttpClientModule } from "@angular/common/http";
     MatCardModule,
     MatTableModule,
     HttpClientModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent],
