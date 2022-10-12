@@ -11,13 +11,20 @@ import { NavComponent } from "./components/templates/nav/nav.component";
 import { MatSidenavModule } from "@angular/material/sidenav";
 import { MatListModule } from "@angular/material/list";
 import { MatIconModule } from "@angular/material/icon";
-import { HomeComponent } from './components/views/home/home.component';
+import { HomeComponent } from "./components/views/home/home.component";
 import { MatCardModule } from "@angular/material/card";
-import { CategoriaReadComponent } from './components/views/categoria/categoria-read/categoria-read.component';
-import {MatTableModule} from '@angular/material/table';
-
+import { CategoriaReadComponent } from "./components/views/categoria/categoria-read/categoria-read.component";
+import { MatTableModule } from "@angular/material/table";
+import { HttpClientModule } from "@angular/common/http";
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, FooterComponent, NavComponent, HomeComponent, CategoriaReadComponent],
+  declarations: [
+    AppComponent,
+    HeaderComponent,
+    FooterComponent,
+    NavComponent,
+    HomeComponent,
+    CategoriaReadComponent,
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -27,7 +34,8 @@ import {MatTableModule} from '@angular/material/table';
     MatListModule,
     MatIconModule,
     MatCardModule,
-    MatTableModule
+    MatTableModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
